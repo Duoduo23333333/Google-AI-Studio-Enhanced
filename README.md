@@ -6,6 +6,23 @@
 1. [安装 Stylus 插件](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)。
 2. [安装该脚本](https://raw.githubusercontent.com/Duoduo23333333/Google-AI-Studio-Enhanced/main/style.user.css)。
 
+
+
+
+## 功能演示
+
+### 核心交互：悬浮目录 (GIF)
+![Demo](https://i.111666.best/image/l0A6BxAZuEFIqX9ZPN8yOs.gif)
+
+![Cover](https://i.111666.best/image/Fjm7jEXh9I27VlididL1eJ.jpg)
+
+
+## 效果对比
+
+![Comparison](https://i.111666.best/image/0IZPOJj5qwV09pnoKXMVWV.jpg)
+
+
+
 ## 功能说明
 
 ### 1. 对话区分

@@ -12,14 +12,14 @@
 ## 功能演示
 
 ### 核心交互：悬浮目录 (GIF)
-![Demo](https://i.111666.best/image/l0A6BxAZuEFIqX9ZPN8yOs.gif)
+![Demo](https://ddwanan.oss-cn-hongkong.aliyuncs.com/%E5%8A%A8%E7%94%BB1.gif)
 
-![Cover](https://i.111666.best/image/Fjm7jEXh9I27VlididL1eJ.jpg)
+![Cover](https://ddwanan.oss-cn-hongkong.aliyuncs.com/%E5%A4%A7%E5%9B%BE.jpg)
 
 
 ## 效果对比
 
-![Comparison](https://i.111666.best/image/0IZPOJj5qwV09pnoKXMVWV.jpg)
+![Comparison](https://ddwanan.oss-cn-hongkong.aliyuncs.com/%E5%AF%B9%E6%AF%94%E5%9B%BE.jpg)
 
 
 

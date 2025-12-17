@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google AI Studio 增强&美化 (Markdown优化/对话目录/侧边栏重排)
 @namespace      github.com/Duoduo23333333
-@version        1.0.2
+@version        1.0.3
 @description    1. 明确区分User/Model背景；2. 对话内目录，快速跳转到前某句；3. Markdown 全面优化（解决了原版排版/可读性差的问题：间距、字重、颜色调整；代码块内应用编程字体）；4. 右侧边栏重构，常用功能卡片化并置顶。
 @author         Duoduo23333333
 @license        MIT
@@ -186,17 +186,52 @@
     .settings-items-wrapper {
         width: 210px !important;
     }
-    ms-right-side-panel {
-        width: 210px !important;
+    ms-right-side-panel:has(*) {
+        width: 210px !important; /* 用has来判断一下 用户有没有手动关掉了这个右侧边栏 */
     }
 
+
+    /* 2025.12.16 可用的旧版标签名 */
     /* 对话框样式微调，宽度减小，增加易读性，同时也能防止鼠标误触右侧目录 */
-    ms-prompt-input-wrapper {
-        border-top : 1px solid var(--color-v3-outline-var) !important;
-    }
     ms-prompt-input-wrapper > div {
         max-width: 790px !important;
     }
+    ms-prompt-input-wrapper {
+        border-top : 1px solid var(--color-v3-outline-var) !important;
+    }
+    /* 2025.12.16 可用的旧版标签名 */
+
+
+    /* 2025.12.17 Ai Studio 官方更新了对话框样式 并更换了标签名 */
+    /*对话框样式微调，宽度减小，增加易读性，同时也能防止鼠标误触右侧目录 */
+    ms-prompt-box {
+        max-width: 790px !important;
+    }
+    /* 对话框上面的渐变遮罩的z-index保证最大，让进度条尾端和目录按钮也都能被渐变覆盖 */
+    ms-chat-bottom-overlay{
+        z-index: 999999999 !important;
+    }
+    /* 2025.12.17 Ai Studio 官方更新了对话框样式 并更换了标签名 */
+
+
+	/* 右上角 Get code 和 reset 按钮位置复原：两种方式，防止又换class名或换结构 */
+	.overlay-header {
+        justify-content: flex-start !important;
+    }
+        .overlay-header > .right {
+        margin-left: 0px !important;
+    }
+        /* 把“Run settings”标题去掉 剩下的图标调整一下留白和对齐 */
+        .overlay-header > h2 {
+        display: none !important;
+    }
+        ms-get-code-button{
+            margin-left: -8% !important; 
+            margin-right: 30% !important; 
+        }
+
+
+
 
 
     /* ==========================================================================
@@ -415,13 +450,13 @@
         display: block !important;
         visibility: visible !important;
         opacity: 1 !important;
-        z-index: 2147483647 !important;
+        z-index: 999990 !important;
     }
 
     /* 悬停高亮优化 */
     .prompt-scrollbar-item button:hover::after {
         background-color: var(--my-hover-item-bg);
-        z-index: 2147483647 !important;
+        z-index: 999990 !important;
     }
 
     /* 6. 给当前所处位置的小框 用不同的颜色标出来 (判断标准为aria-pressed="true")  */
@@ -430,6 +465,6 @@
         background-color: var(--my-pressed-item-bg) !important; 
         border: 0px !important;
         /* 确保它在最上层 防止被其他那些未选中的遮住 */
-        z-index: 2147483648 !important;
+        z-index: 999991 !important;
     }
 }

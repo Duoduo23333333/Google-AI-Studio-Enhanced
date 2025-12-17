@@ -1,14 +1,12 @@
 # Google AI Studio Enhanced
 
-## 安装方法
+## 使用方法(二选一)
 
-1. [安装 Stylus 插件](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)。
-2. 选择以下任一来源安装脚本：
+1. 使用 **油猴/暴力猴** 加载 js 脚本 
+[![GreasyFork](https://img.shields.io/badge/Install%20from-GreasyFork-bf202f?style=for-the-badge&logo=greasyfork&logoColor=white)](https://greasyfork.org/zh-CN/scripts/559114-google-ai-studio-%E5%A2%9E%E5%BC%BA-%E7%BE%8E%E5%8C%96-markdown%E4%BC%98%E5%8C%96-%E5%AF%B9%E8%AF%9D%E7%9B%AE%E5%BD%95-%E4%BE%A7%E8%BE%B9%E6%A0%8F%E9%87%8D%E6%8E%92)
 
-   [![UserStyles](https://img.shields.io/badge/Install%20from-UserStyles.world-32a8a0?style=for-the-badge&logo=stylus&logoColor=white)](https://userstyles.world/style/25632/google-ai-studio-markdown)
-   [![GreasyFork](https://img.shields.io/badge/Install%20from-GreasyFork-bf202f?style=for-the-badge&logo=greasyfork&logoColor=white)](https://greasyfork.org/zh-CN/scripts/559114-google-ai-studio-%E5%A2%9E%E5%BC%BA-%E7%BE%8E%E5%8C%96-markdown%E4%BC%98%E5%8C%96-%E5%AF%B9%E8%AF%9D%E7%9B%AE%E5%BD%95-%E4%BE%A7%E8%BE%B9%E6%A0%8F%E9%87%8D%E6%8E%92)
-
-   *(也可以[点击此处](https://raw.githubusercontent.com/Duoduo23333333/Google-AI-Studio-Enhanced/main/style.user.css)直接从 GitHub 安装)*
+2. 用[Stylus 插件](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)直接加载 css 样式
+[![UserStyles](https://img.shields.io/badge/Install%20from-UserStyles.world-32a8a0?style=for-the-badge&logo=stylus&logoColor=white)](https://userstyles.world/style/25632/google-ai-studio-markdown)
 
 ## 功能说明
 

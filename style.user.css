@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name           Google AI Studio 增强&美化 (Markdown优化/对话目录/侧边栏重排)
 @namespace      github.com/Duoduo23333333
-@version        1.0.3
-@description    1. 明确区分User/Model背景；2. 对话内目录，快速跳转到前某句；3. Markdown 全面优化（解决了原版排版/可读性差的问题：间距、字重、颜色调整；代码块内应用编程字体）；4. 右侧边栏重构，常用功能卡片化并置顶。
+@version        1.0.4
+@description    1. 明确区分User/Model背景；2. 对话内目录，快速跳转到前某句；3. Markdown 全面优化（解决了原版排版/可读性差的问题：间距、字重、颜色调整；代码块内应用编程字体）；4. 右侧边栏重构，常用功能卡片化并置顶；5. 输入框空置时默认只占单行，节省空间。
 @author         Duoduo23333333
 @license        MIT
 @homepageURL    https://github.com/Duoduo23333333/Google-AI-Studio-Enhanced
@@ -203,9 +203,19 @@
 
 
     /* 2025.12.17 Ai Studio 官方更新了对话框样式 并更换了标签名 */
-    /*对话框样式微调，宽度减小，增加易读性，同时也能防止鼠标误触右侧目录 */
+    /*对话框调整为只占用单行，按钮居右，width增大，视觉上更和谐 */
+    .button-row-left{
+        display:none !important; /* 去掉输入框里的 API 钥匙图标 */
+    }
+    .prompt-box-container{
+        flex-direction: row !important;
+    }
+    .text-wrapper{
+        align-items : center !important;
+    }
     ms-prompt-box {
-        max-width: 790px !important;
+        max-width: 1790px !important;
+        width: 97.5% !important;
     }
     /* 对话框上面的渐变遮罩的z-index保证最大，让进度条尾端和目录按钮也都能被渐变覆盖 */
     ms-chat-bottom-overlay{
@@ -340,11 +350,12 @@
     .settings-item.settings-tool[data-test-id="searchAsAToolTooltip"] h3::before {
         content: "Google 搜索" !important;
         font-size: 13px !important;      
-        line-height: 1.4 !important;
+        line-height: 2.7 !important;
         color: inherit !important;  
         display: block !important;
     }
 
+/* 	本来只是想提醒用完记得关 但越看越觉得碍眼 姑且注掉了 
     .settings-item.settings-tool[data-test-id="searchAsAToolTooltip"] h3::after {
         content: "用完记得关掉" !important;
         font-size: 11px !important; 
@@ -354,6 +365,7 @@
         display: block !important;
         font-weight: normal !important;
     }
+*/
 
 
     /* ==========================================================================

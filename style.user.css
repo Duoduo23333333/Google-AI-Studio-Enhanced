@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google AI Studio 增强&美化 (Markdown优化/对话目录/侧边栏重排)
 @namespace      github.com/Duoduo23333333
-@version        1.0.4
+@version        1.0.5
 @description    1. 明确区分User/Model背景；2. 对话内目录，快速跳转到前某句；3. Markdown 全面优化（解决了原版排版/可读性差的问题：间距、字重、颜色调整；代码块内应用编程字体）；4. 右侧边栏重构，常用功能卡片化并置顶；5. 输入框空置时默认只占单行，节省空间。
 @author         Duoduo23333333
 @license        MIT

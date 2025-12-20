@@ -250,7 +250,7 @@
     
     /* 1. 隐藏不常用模块 */
     ms-right-side-panel ms-paid-api-key,
-    ms-right-side-panel ms-model-selector-v3 .subtitle,
+    ms-right-side-panel ms-model-selector .subtitle,
     ms-right-side-panel #mediaResolution,
     ms-right-side-panel mat-divider { 
         display: none !important;
